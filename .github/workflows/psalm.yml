@@ -21,6 +21,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - run: php --version
 
       - name: Psalm Security Scan
         uses: oseki-guy/psalm-github-security-scan@002efa3b6268c42e6f5b76a2098efa6424b011bb
